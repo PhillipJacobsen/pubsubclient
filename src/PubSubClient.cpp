@@ -188,6 +188,12 @@ boolean PubSubClient::connect(const char *id, const char *user, const char *pass
                 if(pass != NULL) {
                     CHECK_STRING_LENGTH(length,pass)
                     length = writeString(pass,buffer,length);
+					
+				//	Serial.println("internal password");		//pj
+				//	Serial.println(pass);
+					
+				//	Serial.println("internal user");			//pj
+				//	Serial.println(user);
                 }
             }
 
